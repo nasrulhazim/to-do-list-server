@@ -2,7 +2,7 @@
 
 require_once('inc/init.php');
 
-$task_id = $_GET['task_id'];
+$task_id = $_GET['task-id'];
 
 $task = new Task();
 $task->load('id = ?',[$task_id]);
