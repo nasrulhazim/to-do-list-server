@@ -24,15 +24,16 @@ CREATE TABLE `tdl_tasks` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
   `description` text,
+  `status` varchar(128) DEFAULT 'Pending',
   `date` datetime DEFAULT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tdl_tasks` */
 
-insert  into `tdl_tasks`(`id`,`name`,`description`,`date`,`created`,`modified`) values (1,'Task A','Some task need to be done','2015-07-31 14:19:49','2015-07-28 14:19:58','2015-07-28 14:19:58'),(2,'Task B','Some task too','2015-07-30 14:36:43','2015-07-28 14:36:51','2015-07-28 14:36:51');
+insert  into `tdl_tasks`(`id`,`name`,`description`,`status`,`date`,`created`,`modified`) values (2,'Task B','Something need to be done 2','In Progress','2015-07-08 00:00:00','2015-07-28 14:36:51','2015-07-28 00:00:00'),(3,'task api 2','something about api 2','Pending','2015-07-31 00:00:00',NULL,'2015-07-28 00:00:00'),(10,'test','test','Pending','2015-07-31 00:00:00',NULL,NULL),(11,'asdas','asdasd','Pending','2015-08-13 00:00:00',NULL,NULL);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
